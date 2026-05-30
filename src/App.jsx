@@ -2121,15 +2121,6 @@ function FilterChip({ label, onRemove }) {
   );
 }
 
-// small reusable filter chip
-function FilterChip({ label, onRemove }) {
-  return (
-    <div style={{ display: "flex", alignItems: "center", gap: 5, padding: "3px 9px", borderRadius: 12, background: "#1a73e818", border: "1px solid #1a73e840", fontSize: 11, fontWeight: 600, color: "#1a73e8" }}>
-      {label}
-      <button onClick={onRemove} style={{ background: "none", border: "none", cursor: "pointer", color: "#1a73e8", fontSize: 11, padding: 0, lineHeight: 1 }}>✕</button>
-    </div>
-  );
-}
 const SPPU_KB={
   physics:{name:"Engineering Physics",units:{1:{title:"Interference & Diffraction",topics:["Young's double slit","Newton's rings","Fraunhofer diffraction","Diffraction grating","Resolving power"]},2:{title:"Lasers & Fibre Optics",topics:["Stimulated emission","Ruby laser","He-Ne laser","Numerical aperture","Fibre optic sensors"]},3:{title:"Quantum Mechanics",topics:["de Broglie hypothesis","Heisenberg uncertainty","Schrödinger equation","Particle in a box","Tunnel effect"]},4:{title:"Semiconductor Physics",topics:["Energy bands","Fermi level","Hall effect","Conductivity","Solar cell"]}},
     assignment:u=>[`Q1. State and derive the condition for bright/dark fringes in ${SPPU_KB.physics.units[u]?.title||"the unit"}.`,`Q2. Draw and explain the experimental setup with a neat diagram.`,`Q3. Derive the mathematical expression and explain each term.`,`Q4. Differentiate between constructive and destructive interference.`,`Q5. Numerical: λ=589nm, d=0.5mm, D=1m. Find fringe width.`,`Q6. Explain applications of ${SPPU_KB.physics.units[u]?.topics?.[1]||"the topic"} in modern technology.`,`Q7. State Rayleigh criterion. How does wavelength affect resolving power?`,`Q8. Write short notes: (a) ${SPPU_KB.physics.units[u]?.topics?.[0]} (b) ${SPPU_KB.physics.units[u]?.topics?.[2]||"related topic"}.`],
